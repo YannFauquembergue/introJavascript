@@ -1,10 +1,8 @@
-function ModifText(letext)
+var MaDiv = document.getElementById("MaDiveNum1");
+    
+MaDiv.addEventListener("click", UneProcedureQuiChangeLetext);
+
+function UneProcedureQuiChangeLetext(evenement)
 {
-    var divs = document.getElementsByName("lesdivs");
-    alert("je vais modifier les divs");
-    for (var i = 0; i < divs.length; i++)
-    {
-        divs[i].innerHTML = letext
-    }
+    evenement.target.innerHTML = "On m'a cliqué dessus";
 }
-ModifText("Hello");
